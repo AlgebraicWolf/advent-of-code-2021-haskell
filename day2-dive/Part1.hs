@@ -2,11 +2,10 @@
 
 module Part1 where
 
-import Control.Applicative
-import Data.Monoid
+import Control.Applicative ()
+import Data.Monoid ( Endo(Endo, appEndo) )
 import System.Environment (getArgs)
-import Text.Blaze.Html5.Attributes (contenteditable)
-import System.Process.Internals (CreateProcess(cmdspec))
+
 
 data Command = Forward Int | Down Int | Up Int deriving Show 
 
